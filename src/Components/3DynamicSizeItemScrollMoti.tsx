@@ -1,6 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 // import {Entypo, Feather} from '@expo/vector-icons';
 import {faker} from '@faker-js/faker';
+import {MotiView} from 'moti';
 import React, {useState, useRef, useEffect} from 'react';
 import {Dimensions, FlatList, Text, TouchableOpacity, View} from 'react-native';
 
@@ -25,7 +26,7 @@ enum Position {
   AlignRight = 1,
 }
 
-export default function DynamicSizeItemScroll() {
+export default function DynamicSizeItemScrollMoti() {
   const [index, setIndex] = useState(0);
   const scrollRef = useRef<FlatList>(null);
   const [viewPostion, setViewPosition] = useState(Position.AlignLeft);
@@ -55,20 +56,24 @@ export default function DynamicSizeItemScroll() {
               onPress={() => {
                 setIndex(fIndex);
               }}>
-              <View
+              <MotiView
+                animate={{
+                  backgroundColor:
+                    fIndex === index ? _colors.active : _colors.inactive,
+                  opacity: fIndex === index ? 1 : 0.6,
+                }}
+                transition={{duration: 500}}
                 style={{
                   marginRight: _spacing,
                   padding: _spacing,
                   borderWidth: 2,
                   borderColor: _colors.active,
                   borderRadius: 12,
-                  backgroundColor:
-                    fIndex === index ? _colors.active : _colors.inactive,
                 }}>
                 <Text style={{color: '#36303F', fontWeight: '700'}}>
                   {item.job}
                 </Text>
-              </View>
+              </MotiView>
             </TouchableOpacity>
           );
         }}

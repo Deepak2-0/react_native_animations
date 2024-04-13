@@ -4,6 +4,9 @@
  *
  * @format
  */
+// As mentioned by Moti
+import 'react-native-reanimated';
+import 'react-native-gesture-handler';
 
 import React from 'react';
 
@@ -11,6 +14,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import DefaultScreen from './src/Components/1HomeScreen';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import DynamicSizeItemScroll from './src/Components/2DynamicSizeItemScroll';
+import DynamicSizeItemScrollMoti from './src/Components/3DynamicSizeItemScrollMoti';
 import {SCREEN_NAMES} from './src/utils/constants';
 
 const Stack = createNativeStackNavigator();
@@ -27,6 +31,10 @@ function App(): React.JSX.Element {
         <Stack.Screen
           name={SCREEN_NAMES.DynamicSizeItemScroll}
           component={DynamicSizeItemScroll}
+        />
+        <Stack.Screen
+          name={SCREEN_NAMES.DynamicSizeItemScrollUsingMoti}
+          component={DynamicSizeItemScrollMoti}
         />
       </Stack.Navigator>
     </NavigationContainer>
