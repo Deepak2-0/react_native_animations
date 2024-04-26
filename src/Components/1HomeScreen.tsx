@@ -22,6 +22,11 @@ const Home = ({navigation}: any) => {
       />
       <Text>Using Moti For some extra touch of animation</Text>
       <HorizontalRule />
+      <Button
+        title={`Go To 4. ${SCREEN_NAMES.PhoneRingIndicatorWave} Screen`}
+        onPress={() => navigation.navigate(SCREEN_NAMES.PhoneRingIndicatorWave)}
+      />
+      <HorizontalRule />
     </View>
   );
 };

@@ -16,6 +16,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import DynamicSizeItemScroll from './src/Components/2DynamicSizeItemScroll';
 import DynamicSizeItemScrollMoti from './src/Components/3DynamicSizeItemScrollMoti';
 import {SCREEN_NAMES} from './src/utils/constants';
+import PhoneRingIndicatorWave from './src/Components/4PhoneRingIndicatorWave';
 
 const Stack = createNativeStackNavigator();
 
@@ -35,6 +36,10 @@ function App(): React.JSX.Element {
         <Stack.Screen
           name={SCREEN_NAMES.DynamicSizeItemScrollUsingMoti}
           component={DynamicSizeItemScrollMoti}
+        />
+        <Stack.Screen
+          name={SCREEN_NAMES.PhoneRingIndicatorWave}
+          component={PhoneRingIndicatorWave}
         />
       </Stack.Navigator>
     </NavigationContainer>
