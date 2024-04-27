@@ -17,6 +17,8 @@ import DynamicSizeItemScroll from './src/Components/2DynamicSizeItemScroll';
 import DynamicSizeItemScrollMoti from './src/Components/3DynamicSizeItemScrollMoti';
 import {SCREEN_NAMES} from './src/utils/constants';
 import PhoneRingIndicatorWave from './src/Components/4PhoneRingIndicatorWave';
+import GalleryViewSyncFlatLists from './src/Components/5GalleryViewSyncFlatLists';
+import ScrollItemAnimationEffect from './src/Components/6ScrollItemAnimationEffect';
 
 const Stack = createNativeStackNavigator();
 
@@ -40,6 +42,14 @@ function App(): React.JSX.Element {
         <Stack.Screen
           name={SCREEN_NAMES.PhoneRingIndicatorWave}
           component={PhoneRingIndicatorWave}
+        />
+        <Stack.Screen
+          name={SCREEN_NAMES.GalleryViewSyncFlatLists}
+          component={GalleryViewSyncFlatLists}
+        />
+        <Stack.Screen
+          name={SCREEN_NAMES.ScrollItemAnimationEffect}
+          component={ScrollItemAnimationEffect}
         />
       </Stack.Navigator>
     </NavigationContainer>

@@ -27,6 +27,20 @@ const Home = ({navigation}: any) => {
         onPress={() => navigation.navigate(SCREEN_NAMES.PhoneRingIndicatorWave)}
       />
       <HorizontalRule />
+      <Button
+        title={`Go To 5. ${SCREEN_NAMES.GalleryViewSyncFlatLists} Screen`}
+        onPress={() =>
+          navigation.navigate(SCREEN_NAMES.GalleryViewSyncFlatLists)
+        }
+      />
+      <HorizontalRule />
+      <Button
+        title={`Go To 6. ${SCREEN_NAMES.ScrollItemAnimationEffect} Screen`}
+        onPress={() =>
+          navigation.navigate(SCREEN_NAMES.ScrollItemAnimationEffect)
+        }
+      />
+      <HorizontalRule />
     </View>
   );
 };

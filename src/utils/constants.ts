@@ -3,4 +3,6 @@ export const SCREEN_NAMES = {
   DynamicSizeItemScroll: 'DynamicSizeItemScroll',
   DynamicSizeItemScrollUsingMoti: 'DynamicSizeItemScrollUsingMoti',
   PhoneRingIndicatorWave: 'PhoneRingIndicatorWave',
+  GalleryViewSyncFlatLists: 'GalleryViewSyncFlatLists',
+  ScrollItemAnimationEffect: 'ScrollItemAnimationEffect',
 } as const;
