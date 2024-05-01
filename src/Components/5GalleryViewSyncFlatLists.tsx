@@ -33,7 +33,6 @@ const fetchImagesFromPexels = async () => {
     });
 
     const data = await response.json();
-    console.log('data:::', data.photos);
 
     return data?.photos;
   } catch (error) {
@@ -93,6 +92,7 @@ const GalleryViewSyncFlatLists = () => {
         keyExtractor={item => item.id.toString()}
         horizontal
         showsHorizontalScrollIndicator={false}
+        pagingEnabled
         onMomentumScrollEnd={event => {
           scrollToActiveIndex(
             Math.floor(event.nativeEvent.contentOffset.x) / width,

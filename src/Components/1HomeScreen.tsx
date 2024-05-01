@@ -41,6 +41,11 @@ const Home = ({navigation}: any) => {
         }
       />
       <HorizontalRule />
+      <Button
+        title={`Go To 7. ${SCREEN_NAMES.CarouselAnimation} Screen`}
+        onPress={() => navigation.navigate(SCREEN_NAMES.CarouselAnimation)}
+      />
+      <HorizontalRule />
     </View>
   );
 };

@@ -5,4 +5,5 @@ export const SCREEN_NAMES = {
   PhoneRingIndicatorWave: 'PhoneRingIndicatorWave',
   GalleryViewSyncFlatLists: 'GalleryViewSyncFlatLists',
   ScrollItemAnimationEffect: 'ScrollItemAnimationEffect',
+  CarouselAnimation: 'CarouselAnimation',
 } as const;
