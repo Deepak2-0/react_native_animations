@@ -20,6 +20,7 @@ import PhoneRingIndicatorWave from './src/Components/4PhoneRingIndicatorWave';
 import GalleryViewSyncFlatLists from './src/Components/5GalleryViewSyncFlatLists';
 import ScrollItemAnimationEffect from './src/Components/6ScrollItemAnimationEffect';
 import CarouselAnimation from './src/Components/7CarouselAnimation';
+import ThreeDCarouselAnimation from './src/Components/8ThreeDCarouselAnimation';
 
 const Stack = createNativeStackNavigator();
 
@@ -55,6 +56,10 @@ function App(): React.JSX.Element {
         <Stack.Screen
           name={SCREEN_NAMES.CarouselAnimation}
           component={CarouselAnimation}
+        />
+        <Stack.Screen
+          name={SCREEN_NAMES.ThreeDCarouselAnimation}
+          component={ThreeDCarouselAnimation}
         />
       </Stack.Navigator>
     </NavigationContainer>

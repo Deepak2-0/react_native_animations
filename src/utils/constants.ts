@@ -6,4 +6,5 @@ export const SCREEN_NAMES = {
   GalleryViewSyncFlatLists: 'GalleryViewSyncFlatLists',
   ScrollItemAnimationEffect: 'ScrollItemAnimationEffect',
   CarouselAnimation: 'CarouselAnimation',
+  ThreeDCarouselAnimation: 'ThreeDCarouselAnimation',
 } as const;
