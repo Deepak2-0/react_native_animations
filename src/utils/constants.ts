@@ -10,4 +10,6 @@ export const SCREEN_NAMES = {
   FirstReanimatedAnimation: 'FirstReanimatedAnimation',
   AnimatingStyleAndProps: 'AnimatingStyleAndProps',
   ApplyingModifiers: 'ApplyingModifiers',
+  HandlingGestures: 'HandlingGestures',
+  WithTimingExample: 'WithTimingExample',
 } as const;

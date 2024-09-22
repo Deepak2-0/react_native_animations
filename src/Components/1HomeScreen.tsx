@@ -70,6 +70,16 @@ const Home = ({navigation}: any) => {
         onPress={() => navigation.navigate(SCREEN_NAMES.ApplyingModifiers)}
       />
       <HorizontalRule />
+      <Button
+        title={`Go To 12. ${SCREEN_NAMES.HandlingGestures} Screen`}
+        onPress={() => navigation.navigate(SCREEN_NAMES.HandlingGestures)}
+      />
+      <HorizontalRule />
+      <Button
+        title={`Go To 13. ${SCREEN_NAMES.WithTimingExample} Screen`}
+        onPress={() => navigation.navigate(SCREEN_NAMES.WithTimingExample)}
+      />
+      <HorizontalRule />
     </View>
   );
 };
