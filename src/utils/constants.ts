@@ -9,4 +9,5 @@ export const SCREEN_NAMES = {
   ThreeDCarouselAnimation: 'ThreeDCarouselAnimation',
   FirstReanimatedAnimation: 'FirstReanimatedAnimation',
   AnimatingStyleAndProps: 'AnimatingStyleAndProps',
+  ApplyingModifiers: 'ApplyingModifiers',
 } as const;

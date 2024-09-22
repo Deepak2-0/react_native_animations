@@ -23,6 +23,7 @@ import CarouselAnimation from './src/Components/7CarouselAnimation';
 import ThreeDCarouselAnimation from './src/Components/8ThreeDCarouselAnimation';
 import FirstReanimatedAnimation from './src/reanimated/1FirstReanimatedAnimation';
 import AnimatingStyleAndProps from './src/reanimated/2AnimatingStyleAndProps';
+import ApplyingModifiers from './src/reanimated/3ApplyingModifiers';
 
 const Stack = createNativeStackNavigator();
 
@@ -70,6 +71,10 @@ function App(): React.JSX.Element {
         <Stack.Screen
           name={SCREEN_NAMES.AnimatingStyleAndProps}
           component={AnimatingStyleAndProps}
+        />
+        <Stack.Screen
+          name={SCREEN_NAMES.ApplyingModifiers}
+          component={ApplyingModifiers}
         />
       </Stack.Navigator>
     </NavigationContainer>

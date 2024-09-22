@@ -65,6 +65,11 @@ const Home = ({navigation}: any) => {
         onPress={() => navigation.navigate(SCREEN_NAMES.AnimatingStyleAndProps)}
       />
       <HorizontalRule />
+      <Button
+        title={`Go To 11. ${SCREEN_NAMES.ApplyingModifiers} Screen`}
+        onPress={() => navigation.navigate(SCREEN_NAMES.ApplyingModifiers)}
+      />
+      <HorizontalRule />
     </View>
   );
 };
