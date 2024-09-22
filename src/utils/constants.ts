@@ -7,4 +7,5 @@ export const SCREEN_NAMES = {
   ScrollItemAnimationEffect: 'ScrollItemAnimationEffect',
   CarouselAnimation: 'CarouselAnimation',
   ThreeDCarouselAnimation: 'ThreeDCarouselAnimation',
+  FirstReanimatedAnimation: 'FirstReanimatedAnimation',
 } as const;

@@ -21,6 +21,7 @@ import GalleryViewSyncFlatLists from './src/Components/5GalleryViewSyncFlatLists
 import ScrollItemAnimationEffect from './src/Components/6ScrollItemAnimationEffect';
 import CarouselAnimation from './src/Components/7CarouselAnimation';
 import ThreeDCarouselAnimation from './src/Components/8ThreeDCarouselAnimation';
+import FirstReanimatedAnimation from './src/reanimated/1FirstReanimatedAnimation';
 
 const Stack = createNativeStackNavigator();
 
@@ -60,6 +61,10 @@ function App(): React.JSX.Element {
         <Stack.Screen
           name={SCREEN_NAMES.ThreeDCarouselAnimation}
           component={ThreeDCarouselAnimation}
+        />
+        <Stack.Screen
+          name={SCREEN_NAMES.FirstReanimatedAnimation}
+          component={FirstReanimatedAnimation}
         />
       </Stack.Navigator>
     </NavigationContainer>

@@ -53,6 +53,13 @@ const Home = ({navigation}: any) => {
         }
       />
       <HorizontalRule />
+      <Button
+        title={`Go To 8. ${SCREEN_NAMES.FirstReanimatedAnimation} Screen`}
+        onPress={() =>
+          navigation.navigate(SCREEN_NAMES.FirstReanimatedAnimation)
+        }
+      />
+      <HorizontalRule />
     </View>
   );
 };
