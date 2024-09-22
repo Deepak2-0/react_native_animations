@@ -28,6 +28,9 @@ import ApplyingModifiers from './src/reanimated/3ApplyingModifiers';
 import {StyleSheet} from 'react-native';
 import HandlingGestures from './src/reanimated/4HandlingGestures';
 import WithTimingExample from './src/reanimated/5WithTimingExample';
+import WithSpringExample from './src/reanimated/6WithSpringExample';
+import WithDecayExample from './src/reanimated/7WithDecayExample';
+import WithDelayExample from './src/reanimated/10WithDelayExample';
 
 const Stack = createNativeStackNavigator();
 
@@ -88,6 +91,18 @@ function App(): React.JSX.Element {
           <Stack.Screen
             name={SCREEN_NAMES.WithTimingExample}
             component={WithTimingExample}
+          />
+          <Stack.Screen
+            name={SCREEN_NAMES.WithSpringExample}
+            component={WithSpringExample}
+          />
+          <Stack.Screen
+            name={SCREEN_NAMES.WithDecayExample}
+            component={WithDecayExample}
+          />
+          <Stack.Screen
+            name={SCREEN_NAMES.WithDelayExample}
+            component={WithDelayExample}
           />
         </Stack.Navigator>
       </NavigationContainer>

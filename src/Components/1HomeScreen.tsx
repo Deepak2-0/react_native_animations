@@ -80,6 +80,21 @@ const Home = ({navigation}: any) => {
         onPress={() => navigation.navigate(SCREEN_NAMES.WithTimingExample)}
       />
       <HorizontalRule />
+      <Button
+        title={`Go To 14. ${SCREEN_NAMES.WithSpringExample} Screen`}
+        onPress={() => navigation.navigate(SCREEN_NAMES.WithSpringExample)}
+      />
+      <HorizontalRule />
+      <Button
+        title={`Go To 14. ${SCREEN_NAMES.WithDecayExample} Screen`}
+        onPress={() => navigation.navigate(SCREEN_NAMES.WithDecayExample)}
+      />
+      <HorizontalRule />
+      <Button
+        title={`Go To 17. ${SCREEN_NAMES.WithDecayExample} Screen`}
+        onPress={() => navigation.navigate(SCREEN_NAMES.WithDelayExample)}
+      />
+      <HorizontalRule />
     </View>
   );
 };

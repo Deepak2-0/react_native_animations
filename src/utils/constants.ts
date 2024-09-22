@@ -12,4 +12,7 @@ export const SCREEN_NAMES = {
   ApplyingModifiers: 'ApplyingModifiers',
   HandlingGestures: 'HandlingGestures',
   WithTimingExample: 'WithTimingExample',
+  WithSpringExample: 'WithSpringExample',
+  WithDecayExample: 'WithDecayExample',
+  WithDelayExample: 'WithDelayExample',
 } as const;
