@@ -22,6 +22,7 @@ import ScrollItemAnimationEffect from './src/Components/6ScrollItemAnimationEffe
 import CarouselAnimation from './src/Components/7CarouselAnimation';
 import ThreeDCarouselAnimation from './src/Components/8ThreeDCarouselAnimation';
 import FirstReanimatedAnimation from './src/reanimated/1FirstReanimatedAnimation';
+import AnimatingStyleAndProps from './src/reanimated/2AnimatingStyleAndProps';
 
 const Stack = createNativeStackNavigator();
 
@@ -65,6 +66,10 @@ function App(): React.JSX.Element {
         <Stack.Screen
           name={SCREEN_NAMES.FirstReanimatedAnimation}
           component={FirstReanimatedAnimation}
+        />
+        <Stack.Screen
+          name={SCREEN_NAMES.AnimatingStyleAndProps}
+          component={AnimatingStyleAndProps}
         />
       </Stack.Navigator>
     </NavigationContainer>

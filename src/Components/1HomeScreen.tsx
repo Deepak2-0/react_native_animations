@@ -54,10 +54,15 @@ const Home = ({navigation}: any) => {
       />
       <HorizontalRule />
       <Button
-        title={`Go To 8. ${SCREEN_NAMES.FirstReanimatedAnimation} Screen`}
+        title={`Go To 9. ${SCREEN_NAMES.FirstReanimatedAnimation} Screen`}
         onPress={() =>
           navigation.navigate(SCREEN_NAMES.FirstReanimatedAnimation)
         }
+      />
+      <HorizontalRule />
+      <Button
+        title={`Go To 10. ${SCREEN_NAMES.AnimatingStyleAndProps} Screen`}
+        onPress={() => navigation.navigate(SCREEN_NAMES.AnimatingStyleAndProps)}
       />
       <HorizontalRule />
     </View>

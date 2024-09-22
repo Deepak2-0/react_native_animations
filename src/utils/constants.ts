@@ -8,4 +8,5 @@ export const SCREEN_NAMES = {
   CarouselAnimation: 'CarouselAnimation',
   ThreeDCarouselAnimation: 'ThreeDCarouselAnimation',
   FirstReanimatedAnimation: 'FirstReanimatedAnimation',
+  AnimatingStyleAndProps: 'AnimatingStyleAndProps',
 } as const;
