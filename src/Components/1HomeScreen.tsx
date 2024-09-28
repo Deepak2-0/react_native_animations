@@ -1,12 +1,12 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text, StyleSheet, Button} from 'react-native';
+import {View, Text, StyleSheet, Button, ScrollView} from 'react-native';
 import {SCREEN_NAMES} from '../utils/constants';
 import HorizontalRule from '../commonComponent/HorizontalRule';
 
 const Home = ({navigation}: any) => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <Text>Home Screen</Text>
       <HorizontalRule />
       <Button
@@ -107,15 +107,27 @@ const Home = ({navigation}: any) => {
         onPress={() => navigation.navigate(SCREEN_NAMES.CancelAnimationExample)}
       />
       <HorizontalRule />
-    </View>
+      <Button
+        title={`Go To 20. ${SCREEN_NAMES.ScrollToExample} Screen`}
+        onPress={() => navigation.navigate(SCREEN_NAMES.ScrollToExample)}
+      />
+      <HorizontalRule />
+      <Button
+        title={`Go To 21. ${SCREEN_NAMES.AnimatedKeyboardExample} Screen`}
+        onPress={() =>
+          navigation.navigate(SCREEN_NAMES.AnimatedKeyboardExample)
+        }
+      />
+      <HorizontalRule />
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    // flex: 1,
+    // justifyContent: 'center',
+    // alignItems: 'center',
   },
 });
 

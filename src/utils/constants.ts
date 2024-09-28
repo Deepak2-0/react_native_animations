@@ -17,4 +17,6 @@ export const SCREEN_NAMES = {
   WithDelayExample: 'WithDelayExample',
   WithDerivedValueExample: 'WithDerivedValueExample',
   CancelAnimationExample: 'CancelAnimationExample',
+  ScrollToExample: 'ScrollToExample',
+  AnimatedKeyboardExample: 'AnimatedKeyboardExample',
 } as const;
