@@ -15,4 +15,6 @@ export const SCREEN_NAMES = {
   WithSpringExample: 'WithSpringExample',
   WithDecayExample: 'WithDecayExample',
   WithDelayExample: 'WithDelayExample',
+  WithDerivedValueExample: 'WithDerivedValueExample',
+  CancelAnimationExample: 'CancelAnimationExample',
 } as const;

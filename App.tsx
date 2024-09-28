@@ -31,6 +31,8 @@ import WithTimingExample from './src/reanimated/5WithTimingExample';
 import WithSpringExample from './src/reanimated/6WithSpringExample';
 import WithDecayExample from './src/reanimated/7WithDecayExample';
 import WithDelayExample from './src/reanimated/10WithDelayExample';
+import WithDerivedValueExample from './src/reanimated/11WithDerivedValueExample';
+import CancelAnimationExample from './src/reanimated/12CancelAnimationExample';
 
 const Stack = createNativeStackNavigator();
 
@@ -103,6 +105,14 @@ function App(): React.JSX.Element {
           <Stack.Screen
             name={SCREEN_NAMES.WithDelayExample}
             component={WithDelayExample}
+          />
+          <Stack.Screen
+            name={SCREEN_NAMES.WithDerivedValueExample}
+            component={WithDerivedValueExample}
+          />
+          <Stack.Screen
+            name={SCREEN_NAMES.CancelAnimationExample}
+            component={CancelAnimationExample}
           />
         </Stack.Navigator>
       </NavigationContainer>

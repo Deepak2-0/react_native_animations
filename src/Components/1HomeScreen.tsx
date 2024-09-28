@@ -95,6 +95,18 @@ const Home = ({navigation}: any) => {
         onPress={() => navigation.navigate(SCREEN_NAMES.WithDelayExample)}
       />
       <HorizontalRule />
+      <Button
+        title={`Go To 18. ${SCREEN_NAMES.WithDerivedValueExample} Screen`}
+        onPress={() =>
+          navigation.navigate(SCREEN_NAMES.WithDerivedValueExample)
+        }
+      />
+      <HorizontalRule />
+      <Button
+        title={`Go To 19. ${SCREEN_NAMES.CancelAnimationExample} Screen`}
+        onPress={() => navigation.navigate(SCREEN_NAMES.CancelAnimationExample)}
+      />
+      <HorizontalRule />
     </View>
   );
 };
